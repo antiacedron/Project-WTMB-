@@ -14,12 +14,14 @@ var Person = class {
       this.cities.push (city) 
       city.readers.push(this) 
   }
-  } 
+}  
+
+//list of readers
 
 var reader1 = new Person ("Emma Frost",37)
 var reader2 = new Person ("Erik Lensherr", 40)
 var reader3 = new Person ("Ororo Munroe", 23) 
-var reader4 = new Person ("Shiro Yoshida", 46)
+var reader4 = new Person ("Shiro Yoshida", 46) 
 
 
 var Book=class{
@@ -35,10 +37,13 @@ var Book=class{
     }
 }
 
+//list of books 
+
 var howl= new Book ("Howl")
 var pi= new Book ("Pi")
 var unmundofeliz= new Book ("Un mundo feliz") 
 var lessthanzero= new Book ("Less than zero") 
+
 
 var City=class{
     constructor (name) {
@@ -47,11 +52,14 @@ var City=class{
         this.books=[] 
     }
  }
+ 
+//list of cities 
 
 var berlin= new City ("Berlin")
 var madrid= new City ("Madrid")
 var venice= new City ("Venice") 
 
+//interactions  
 
 reader1.read(howl) 
 reader2.read(howl)
