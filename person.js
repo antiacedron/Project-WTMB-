@@ -4,7 +4,7 @@ module.exports = class Person {
         this.age=age
         this.books= []
         this.cities=[] 
-    } 
+    }  
   
     read (book) {
         this.books.push (book)
@@ -13,5 +13,5 @@ module.exports = class Person {
     live(city) {
         this.cities.push (city) 
         city.readers.push(this) 
-    }
+    }  
   }  

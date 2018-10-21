@@ -13,7 +13,7 @@ const Database= require ("./database")
   
   //list of books 
   
-  var howl= new Book ("Howl")
+  var howl= new Book ("Howl") 
   var pi= new Book ("Pi")
   var unmundofeliz= new Book ("Un mundo feliz") 
   var lessthanzero= new Book ("Less than zero") 
@@ -41,10 +41,12 @@ const Database= require ("./database")
   
   howl.located(berlin)
   howl.located(madrid)
-  lessthanzero.located(berlin) 
+  lessthanzero.located(berlin)  
 
   //console.log (madrid); 
   //console.log (reader1); 
   //console.log (lessthanzero)  
 
- Database.save(reader1) 
+ Database.save(berlin) 
+ const loadedFile = Database.load()
+ console.log(loadedFile) 
