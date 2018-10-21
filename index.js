@@ -37,11 +37,14 @@ const Database= require ("./database")
   reader1.live(berlin) 
   reader2.live(berlin) 
   reader3.live (madrid)
-  reader4.live(venice)
+  reader4.live(venice) 
   
   howl.located(berlin)
   howl.located(madrid)
+  lessthanzero.located(berlin) 
 
-  console.log (madrid); 
-  console.log (reader1); 
-  console.log (lessthanzero)
+  //console.log (madrid); 
+  //console.log (reader1); 
+  //console.log (lessthanzero)  
+
+ Database.save(reader1) 
